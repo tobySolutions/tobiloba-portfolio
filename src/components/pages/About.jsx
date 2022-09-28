@@ -1,15 +1,15 @@
 import Tobiloba from "../../Assets/Me.png.jpg";
 import Header from ".././base/Header";
 
+// I want the pages I'm on to have the hover state on them in the navbar and the others wouldn't
+
 function About() {
   return (
     <>
       <Header />
-      <section className="about-section py-[3em] my-[1em] container">
+      <main className="about-section py-[3em] my-[1em] container">
         <div className="mb-[2em]">
-          <h1 className="font-bold text-[2.25rem]  text-gray-700 leading-[1.3em]">
-            Hey, I'm Tobiloba Adedeji
-          </h1>
+          <h1 className="page-title">Hey, I'm Tobiloba Adedeji</h1>
           <p className="font-semibold mt-[.6em]">Frontend Engineer</p>
         </div>
 
@@ -18,13 +18,13 @@ function About() {
           <div className="about-me py-[1em]">
             <h2 className="text-2xl font-medium">About Me</h2>
             <p className="my-[1em]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Molestiae, culpa minima! Autem eius minima dolorum commodi quasi
-              tempora, in quod!
+              Hi there! I've been in tech for about a year now and I've worked
+              on a couple of amazing scalable applications that you might find <strong>Mind-blowing</strong>
             </p>
           </div>
+          {/* I can have like a reach out via linkedin, twitter here and a link to my resume */}
         </div>
-      </section>
+      </main>
     </>
   );
 }

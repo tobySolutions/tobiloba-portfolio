@@ -1,11 +1,11 @@
+import {Fragment} from "react";
 import Layout from "./Layout";
-import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <Fragment>
         <Layout />
-    </div>
+    </Fragment>
   );
 }
 

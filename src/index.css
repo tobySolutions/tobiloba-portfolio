@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 18px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -39,5 +43,17 @@ img {
 
   .list-item:nth-child(4) {
     @apply border-none
+  }
+
+  .page-title {
+    @apply font-bold text-[2rem]  text-gray-700 leading-[1.3em]
+  }
+
+  .skills-container {
+    @apply bg-gray-900 opacity-[.7] my-[1em] p-[1em]
+  }
+
+  .skill-card {
+    @apply text-white w-[40%] my-0 mx-auto max-w-[500px] text-center
   }
 }
