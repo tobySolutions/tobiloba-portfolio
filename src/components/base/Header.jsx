@@ -4,7 +4,7 @@ import logo from "../../Assets/logo.svg";
 import {AiOutlineClose} from "react-icons/ai"
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom"
-import {style} from "../../Assets/Data/data"
+import {style} from "../../Data/data"
 
 function Header() {
   // I essentially want an header that has my logo on the left side and an hamburger on the right hand side

@@ -1,9 +1,20 @@
+import { useState} from "react";
 import Header from ".././base/Header";
-import { mySkills } from "../../Assets/Data/data";
+import ProficientComponent from "../base/helpers/ProficientComponent";
+
 
 function Skills() {
   //  React Icons has all the icons I need for skills.
-  // I can just use png images to supplement the isons
+  // I can just use png images to replace the icons.
+    const [seeMore, setSeeMore] = useState(false);
+
+  // I want three skills to be displayed and when the see more button is clicked, more skills can be shown
+  
+ 
+  const handleCardOpening = () => {
+    setSeeMore(!seeMore);
+  };
+
 
   return (
     <>
@@ -16,13 +27,10 @@ function Skills() {
             Proficiencies
           </h2>
           <div className="skills-container skills__proficient">
-            {mySkills.proficient.map((skill) => (
-              <div key={skill.id} className="skill-card">
-                <img src={skill.logo} alt="html-logo" />
-                <p className="skill-name">{skill.skillName}</p>
-                <p>{skill.desc}</p>
-              </div>
-            ))}
+            <ProficientComponent seeMore={seeMore}/>
+            <span onClick={handleCardOpening} className="text-white font-semibold">
+              {seeMore ? "See Less" : "See More"}
+            </span>
           </div>
         </section>
 
@@ -55,5 +63,10 @@ function Skills() {
     </>
   );
 }
+
+
+
+
+  
 
 export default Skills;
