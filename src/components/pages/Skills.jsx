@@ -1,20 +1,10 @@
-import { useState} from "react";
 import Header from ".././base/Header";
+import EducationComponent from "../base/helpers/EducationComponent";
 import ProficientComponent from "../base/helpers/ProficientComponent";
+import InterestsComponent from "../base/helpers/InterestsComponent";
 
 
 function Skills() {
-  //  React Icons has all the icons I need for skills.
-  // I can just use png images to replace the icons.
-    const [seeMore, setSeeMore] = useState(false);
-
-  // I want three skills to be displayed and when the see more button is clicked, more skills can be shown
-  
- 
-  const handleCardOpening = () => {
-    setSeeMore(!seeMore);
-  };
-
 
   return (
     <>
@@ -27,10 +17,7 @@ function Skills() {
             Proficiencies
           </h2>
           <div className="skills-container skills__proficient">
-            <ProficientComponent seeMore={seeMore}/>
-            <span onClick={handleCardOpening} className="text-white font-semibold">
-              {seeMore ? "See Less" : "See More"}
-            </span>
+            <ProficientComponent/> 
           </div>
         </section>
 
@@ -39,11 +26,7 @@ function Skills() {
             Education and Certifications
           </h2>
           <div className="proficient-container bg-gray-900 opacity-[.7] p-[.6em] my-[1em]">
-            <p className="text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              quis, deserunt nisi impedit atque praesentium dolorem cupiditate
-              eveniet quia odio!
-            </p>
+            <EducationComponent/>
           </div>
         </section>
 
@@ -52,11 +35,7 @@ function Skills() {
             Interests
           </h2>
           <div className="proficient-container bg-gray-900 opacity-[.7] p-[.6em] my-[1em]">
-            <p className="text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              quis, deserunt nisi impedit atque praesentium dolorem cupiditate
-              eveniet quia odio!
-            </p>
+            <InterestsComponent/>
           </div>
         </section>
       </main>

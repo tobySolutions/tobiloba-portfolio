@@ -1,6 +1,10 @@
 import Html from ".././Assets/html5.png";
 import CSS from ".././Assets/css.png";
-import JavaScript from ".././Assets/javascript.png"
+import JavaScript from ".././Assets/javascript.png";
+import Tailwind from ".././Assets/tailwind.png";
+import React from "../Assets/React.png";
+import Next from "../Assets/next.png";
+import Gatsby from "../Assets/Gatsby.png"
 
 export const mySkills = {
   proficient: [
@@ -25,23 +29,29 @@ export const mySkills = {
     {
       id: "tailwind",
       skillName: "tailwindCSS",
-      logo: JavaScript,
+      logo: Tailwind,
       desc: "lorem ipsum heya",
     },
     {
       id: "react",
       skillName: "Reactjs",
-      logo: JavaScript,
+      logo: React,
       desc: "lorem ipsum heya",
     },
     {
       id: "next",
       skillName: "Next",
-      logo: JavaScript,
+      logo: Next,
+      desc: "lorem ipsum heya",
+    },
+    {
+      id: "next",
+      skillName: "Gatsby",
+      logo: Gatsby,
       desc: "lorem ipsum heya",
     },
   ],
-  extra: [{}],
+  educationCert: [{}],
   interested: [{}],
 };
 

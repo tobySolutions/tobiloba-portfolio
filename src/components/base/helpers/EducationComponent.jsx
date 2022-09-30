@@ -1,20 +1,19 @@
 import { useState } from "react";
-import { mySkills } from "../../../Data/data"
+import { mySkills } from "../../../Data/data";
 
-function ProficientComponent() {
-  const slicedSkills = mySkills.proficient.slice(0, 3);
+function EducationComponent() {
+    const slicedSkills = mySkills.educationCert.slice(0, 3);
+    
+     const [seeMore, setSeeMore] = useState(false);
 
-  const [seeMore, setSeeMore] = useState(false);
-  
-    const handleCardOpening = () => {
-      setSeeMore(!seeMore);
-    };
-  
+     const handleCardOpening = () => {
+       setSeeMore(!seeMore);
+     };
 
   return (
     <>
       {seeMore
-        ? mySkills.proficient.map((skill) => (
+        ? mySkills.educationCert.map((skill) => (
             <div key={skill.id} className="skill-card">
               <img src={skill.logo} alt="html-logo" />
               <p className="skill-name">{skill.skillName}</p>
@@ -35,4 +34,4 @@ function ProficientComponent() {
   );
 }
 
-export default ProficientComponent;
+export default EducationComponent;
