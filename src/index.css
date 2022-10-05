@@ -54,6 +54,6 @@ img {
   }
 
   .skill-card {
-    @apply text-white w-[40%] my-0 mx-auto max-w-[500px] text-center
+    @apply text-white w-[42%] my-0 mx-auto py-[1em] max-w-[500px] text-center
   }
 }

@@ -45,14 +45,99 @@ export const mySkills = {
       desc: "lorem ipsum heya",
     },
     {
-      id: "next",
+      id: "gatsby",
       skillName: "Gatsby",
       logo: Gatsby,
       desc: "lorem ipsum heya",
     },
   ],
-  educationCert: [{}],
-  interested: [{}],
+  educationCert: [
+    {
+      id: "html",
+      skillName: "HTML",
+      logo: Html,
+      desc: "lorem ipsum heya",
+    },
+    {
+      id: "css",
+      skillName: "CSS",
+      logo: CSS,
+      desc: "lorem ipsum heya",
+    },
+    {
+      id: "javascript",
+      skillName: "JavaScript",
+      logo: JavaScript,
+      desc: "lorem ipsum heya",
+    },
+    {
+      id: "tailwind",
+      skillName: "tailwindCSS",
+      logo: Tailwind,
+      desc: "lorem ipsum heya",
+    },
+    {
+      id: "react",
+      skillName: "Reactjs",
+      logo: React,
+      desc: "lorem ipsum heya",
+    },
+    {
+      id: "next",
+      skillName: "Next",
+      logo: Next,
+      desc: "lorem ipsum heya",
+    },
+    {
+      id: "gatsby",
+      skillName: "Gatsby",
+      logo: Gatsby,
+      desc: "lorem ipsum heya",
+    }],
+  interested: [
+    {
+      id: "html",
+      skillName: "HTML",
+      logo: Html,
+      desc: "lorem ipsum heya",
+    },
+    {
+      id: "css",
+      skillName: "CSS",
+      logo: CSS,
+      desc: "lorem ipsum heya",
+    },
+    {
+      id: "javascript",
+      skillName: "JavaScript",
+      logo: JavaScript,
+      desc: "lorem ipsum heya",
+    },
+    {
+      id: "tailwind",
+      skillName: "tailwindCSS",
+      logo: Tailwind,
+      desc: "lorem ipsum heya",
+    },
+    {
+      id: "react",
+      skillName: "Reactjs",
+      logo: React,
+      desc: "lorem ipsum heya",
+    },
+    {
+      id: "next",
+      skillName: "Next",
+      logo: Next,
+      desc: "lorem ipsum heya",
+    },
+    {
+      id: "gatsby",
+      skillName: "Gatsby",
+      logo: Gatsby,
+      desc: "lorem ipsum heya",
+    },
+  ],
 };
 
 export const style = {
